@@ -1,6 +1,7 @@
-package org.example;
+package org.example.grade;
 
-import org.assertj.core.api.Assertions;
+import org.example.grade.Course;
+import org.example.grade.GradeCalculator;
 import org.junit.jupiter.api.Test;
 
 import java.util.List;

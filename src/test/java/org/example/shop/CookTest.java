@@ -1,16 +1,17 @@
-package org.example;
+package org.example.shop;
 
+import org.example.shop.Cook;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.AssertionsForClassTypes.assertThatCode;
 
-public class CourseTest {
+public class CookTest {
 
-    @DisplayName("과목(코스)을 생성한다.")
+    @DisplayName("요리를 생성한다.")
     @Test
     void createTest() {
-        assertThatCode(()-> new Course("OOP", 3, "A+"))
+        assertThatCode(() -> new Cook("만두", 5000))
                 .doesNotThrowAnyException();
     }
 }
